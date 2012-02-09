@@ -1,0 +1,11 @@
+{
+  "name": "PayPalMassPaymentNVP",
+  "description": "Making payments with MassPayment NVP",
+  "author": "http://github.com/alessioalex",
+  "version": "0.0.1",
+  "dependencies": {
+    "request": "= 2.9.100",
+    "qs": "= 0.4.2"
+  },
+  "engines": { "node": ">= 0.4.x < 0.8.0" }
+}
