@@ -1,7 +1,7 @@
 {
   "name": "PayPal-MassPayment",
   "description": "Making payments with MassPayment NVP",
-  "author": "http://github.com/alessioalex",
+  "author": "http://github.com/mateodelnorte",
   "version": "0.0.1",
   "dependencies": {
     "hat": "0.0.3",
