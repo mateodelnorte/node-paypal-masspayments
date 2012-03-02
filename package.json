@@ -1,5 +1,5 @@
 {
-  "name": "PayPal-MassPayment",
+  "name": "node-paypal-masspayments",
   "description": "Making payments with MassPayment NVP",
   "author": "http://github.com/mateodelnorte",
   "version": "0.0.1",
