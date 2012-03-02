@@ -3,13 +3,13 @@ module.exports = {
   'vars': {
     'METHOD': 'MassPay',
     'VERSION': '51.0',
-    'PWD': 'insert password here',
-    'USER': 'insert user here',
-    'SIGNATURE': 'insert signature here',
-    'EMAILSUBJECT': 'example_email_subject',
+    'PWD': process.env.PAYPAL_PWD,
+    'USER': process.env.PAYPAL_USER,
+    'SIGNATURE': process.env.PAYPAL_SIGNATURE,
+    'EMAILSUBJECT': process.env.PAYPAL_EMAILSUBJECT,
     'RECEIVERTYPE': 'EmailAddress',
     'CURRENCYCODE': 'USD'
   },
   // Possible environments: 'sandbox', 'beta-sandbox' or 'live'
-  'environment': 'sandbox'
+  'environment': (process.env.NODE_ENV === 'production') ? 'live' : 'sandbox'
 };

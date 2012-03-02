@@ -11,12 +11,43 @@ https://developer.paypal.com/
 
 ## How to use
 
-The MP function takes 3 parameters: an object containing the `params` property, where you set all the variables needed to be sent to PayPal and an `environment` property, which can be 'sandbox', 'beta-sandbox' or 'live'. For more information check example/test.js.
+Require the masspayments module in your code: 
 
-    MP(params, function onSuccess(res) {
-      console.log('PayPal Mass Payment successful. Transaction details: \n\n', res);
-    }, function onFailure(err, res) {
-      if (err) { throw err; }
+    var MassPay = require('node-paypal-masspayments')
 
-      console.log('PayPal Mass Payment failed. Transaction details: \n\n', res);
+Instantiate a new instance of the class and provide to it an options variable that provides access to your paypal password, user, api signature, and a subject for your masspayment emails. 
+
+    var mp = new MassPay({
+        pwd: process.env.PAYPAL_PWD
+        , user: process.env.PAYPAL_USER
+        , signature: process.env.PAYPAL_SIGNATURE
+        , emailsubject: process.env.PAYPAL_EMAILSUBJECT
+    }),
+
+You'll send your payments in batches of up to 250. Each batch is created and passed an array of payment request json objects, each defining an email, amount, uniqueId, and note for the request. 
+
+    var paymentRequests = [
+      {
+        email: 'matt@gochime.com'
+        , amount: '1.5'
+        , uniqueId: '12345'
+        , note: 'request for matt@gc'
+      }
+    , {
+        email: 'tim@gochime.com'
+        , amount: '1.75'
+        , uniqueId: '123456'
+        , note: 'request for tim@gc'
+      }
+    ];
+
+    var batch = new MassPay.PaymentBatch(paymentRequests);
+
+Pass your batch to to the pay() method, along with an event handler to handle the response. All properties from the PayPal API are transposed to either the error or results object upon success (or a successful call, which returns a logical error from the PayPal gateway).
+
+    mp.pay(batch, function(err, results) {
+      if(err) throw err;
+      ...
+      // do stuff!
+      assert.equal(results.ACK, 'Success')
     });

@@ -1,11 +1,23 @@
 {
-  "name": "PayPalMassPaymentNVP",
+  "name": "PayPal-MassPayment",
   "description": "Making payments with MassPayment NVP",
   "author": "http://github.com/alessioalex",
   "version": "0.0.1",
   "dependencies": {
+    "hat": "0.0.3",
     "request": "= 2.9.100",
-    "qs": "= 0.4.2"
+    "qs": "= 0.4.2",
+    "underscore": "1.3.1"
   },
-  "engines": { "node": ">= 0.4.x < 0.8.0" }
+  "devDependencies": {
+    "vows": "0.6.2"
+  },
+  "engines": { "node": ">= 0.4.x < 0.8.0" },
+  "repository": { 
+    "type": "git",
+    "url": "git@github.com:mateodelnorte/node-paypal-masspayments.git" 
+  },
+  "scripts": {
+    "test": "vows test/* --spec"
+  }
 }
