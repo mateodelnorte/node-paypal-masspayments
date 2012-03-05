@@ -2,7 +2,7 @@
   "name": "node-paypal-masspayments",
   "description": "Making payments with MassPayment NVP",
   "author": "http://github.com/mateodelnorte",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "hat": "0.0.3",
     "request": "= 2.9.100",
@@ -15,7 +15,7 @@
   "engines": { "node": ">= 0.4.x < 0.8.0" },
   "repository": { 
     "type": "git",
-    "url": "git@github.com:mateodelnorte/node-paypal-masspayments.git" 
+    "url": "git://github.com/mateodelnorte/node-paypal-masspayments.git" 
   },
   "scripts": {
     "test": "vows test/* --spec"

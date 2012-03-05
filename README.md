@@ -28,13 +28,13 @@ You'll send your payments in batches of up to 250. Each batch is created and pas
 
     var paymentRequests = [
       {
-        email: 'matt@gochime.com'
+        email: 'matt@email.com'
         , amount: '1.5'
         , uniqueId: '12345'
         , note: 'request for matt@gc'
       }
     , {
-        email: 'tim@gochime.com'
+        email: 'tim@email.com'
         , amount: '1.75'
         , uniqueId: '123456'
         , note: 'request for tim@gc'
