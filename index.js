@@ -17,7 +17,7 @@ function MassPay(options) {
     , currencyCode: 'USD'
   };
   
-  this.environment = (process.env.NODE_ENV === 'production') ? 'live' : 'sandbox';
+  this.environment = (process.env.PAYPAL_ENV === 'production') ? 'live' : 'sandbox';
 };
 
 MassPay.prototype.pay = function pay(paymentBatch, callback) {
