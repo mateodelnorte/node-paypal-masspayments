@@ -1,0 +1,139 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+info using npm@1.1.0-3
+info using node@v0.6.9
+verbose /usr/local/bin/node node symlink
+verbose config file /Users/matt/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose publish [ '.' ]
+verbose caching /Users/matt/Development/node-paypal-masspayments/package.json
+verbose loadDefaults node-paypal-masspayments@0.0.2
+info prepublish node-paypal-masspayments@0.0.2
+verbose cache add [ '.', null ]
+silly cache add: name, spec, args [ undefined, '.', [ '.', null ] ]
+verbose parsed url { pathname: '.', path: '.', href: '.' }
+verbose caching package.json
+verbose loadDefaults node-paypal-masspayments@0.0.2
+verbose pack /Users/matt/Development/node-paypal-masspayments
+verbose pack /Users/matt/Development/node-paypal-masspayments /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/tmp.tgz
+silly makeList /Users/matt/Development/node-paypal-masspayments
+silly dir, dirLen [ '/Users/matt/Development/node-paypal-masspayments', 49 ]
+verbose tarball /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/tmp.tgz
+verbose parent /Users/matt/Development/node-paypal-masspayments
+verbose mkdir (expected) error ENOENT, no such file or directory '/var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/___package.npm'
+verbose mkdir done: /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar undefined
+silly asyncMap in gTP /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/___package.npm/node-paypal-masspayments
+silly asyncMap in gTP /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/___package.npm/node-paypal-masspayments/.npmignore
+silly asyncMap in gTP /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/___package.npm/node-paypal-masspayments/index.js
+silly asyncMap in gTP /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/___package.npm/node-paypal-masspayments/package.json
+silly asyncMap in gTP /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/___package.npm/node-paypal-masspayments/README.md
+silly asyncMap in gTP /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/___package.npm/node-paypal-masspayments/config
+silly asyncMap in gTP /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/___package.npm/node-paypal-masspayments/config/development.js
+silly asyncMap in gTP /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/___package.npm/node-paypal-masspayments/config/production.js
+silly asyncMap in gTP /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/___package.npm/node-paypal-masspayments/config/staging.js
+silly asyncMap in gTP /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/___package.npm/node-paypal-masspayments/test
+silly asyncMap in gTP /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/___package.npm/node-paypal-masspayments/test/masspay-test.js
+silly asyncMap in gTP /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/___package.npm/node-paypal-masspayments/test/paymentbatch-test.js
+verbose gunzed /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/___package.npm/node-paypal-masspayments
+verbose rm'ed /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/package
+verbose renamed [ '/var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/___package.npm/node-paypal-masspayments',
+verbose renamed   '/var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/package' ]
+verbose caching /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/package/package.json
+verbose loadDefaults node-paypal-masspayments@0.0.2
+verbose tarball contents [ 'package', 'tmp.tgz' ]
+verbose from cache /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/package/package.json
+verbose pack /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/package
+verbose pack /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/package /Users/matt/.npm/node-paypal-masspayments/0.0.2/package.tgz
+silly makeList /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/package
+silly dir, dirLen [ '/var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/package',
+silly dir, dirLen   109 ]
+verbose tarball /Users/matt/.npm/node-paypal-masspayments/0.0.2/package.tgz
+verbose parent /var/folders/Uj/UjR343n7GDW444NRiNY9Zk+++TI/-Tmp-/npm-1334513316503/1334513316503-0.2023857058957219/package
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/matt/.npm/node-paypal-masspayments/0.0.2/___package.npm'
+verbose mkdir done: /Users/matt/.npm/node-paypal-masspayments/0.0.2/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Users/matt/.npm/node-paypal-masspayments/0.0.2/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar undefined
+silly asyncMap in gTP /Users/matt/.npm/node-paypal-masspayments/0.0.2/___package.npm/package
+silly asyncMap in gTP /Users/matt/.npm/node-paypal-masspayments/0.0.2/___package.npm/package/.npmignore
+silly asyncMap in gTP /Users/matt/.npm/node-paypal-masspayments/0.0.2/___package.npm/package/index.js
+silly asyncMap in gTP /Users/matt/.npm/node-paypal-masspayments/0.0.2/___package.npm/package/package.json
+silly asyncMap in gTP /Users/matt/.npm/node-paypal-masspayments/0.0.2/___package.npm/package/README.md
+silly asyncMap in gTP /Users/matt/.npm/node-paypal-masspayments/0.0.2/___package.npm/package/config
+silly asyncMap in gTP /Users/matt/.npm/node-paypal-masspayments/0.0.2/___package.npm/package/config/development.js
+silly asyncMap in gTP /Users/matt/.npm/node-paypal-masspayments/0.0.2/___package.npm/package/config/production.js
+silly asyncMap in gTP /Users/matt/.npm/node-paypal-masspayments/0.0.2/___package.npm/package/config/staging.js
+silly asyncMap in gTP /Users/matt/.npm/node-paypal-masspayments/0.0.2/___package.npm/package/test
+silly asyncMap in gTP /Users/matt/.npm/node-paypal-masspayments/0.0.2/___package.npm/package/test/masspay-test.js
+silly asyncMap in gTP /Users/matt/.npm/node-paypal-masspayments/0.0.2/___package.npm/package/test/paymentbatch-test.js
+verbose gunzed /Users/matt/.npm/node-paypal-masspayments/0.0.2/___package.npm/package
+verbose rm'ed /Users/matt/.npm/node-paypal-masspayments/0.0.2/package
+verbose renamed [ '/Users/matt/.npm/node-paypal-masspayments/0.0.2/___package.npm/package',
+verbose renamed   '/Users/matt/.npm/node-paypal-masspayments/0.0.2/package' ]
+verbose caching /Users/matt/.npm/node-paypal-masspayments/0.0.2/package/package.json
+verbose loadDefaults node-paypal-masspayments@0.0.2
+silly updated sha bytes 3060
+info shasum 97951791e6c2ea6b921dbdad43b1c6aa8476ff47
+info shasum /Users/matt/.npm/node-paypal-masspayments/0.0.2/package.tgz
+verbose from cache /Users/matt/.npm/node-paypal-masspayments/0.0.2/package/package.json
+verbose chmod /Users/matt/.npm/node-paypal-masspayments/0.0.2/package.tgz 644
+verbose chown [ '/Users/matt/.npm/node-paypal-masspayments/0.0.2/package.tgz',
+verbose chown   501,
+verbose chown   20 ]
+silly publish { name: 'node-paypal-masspayments',
+silly publish   description: 'Making payments with MassPayment NVP',
+silly publish   author: { name: 'http://github.com/mateodelnorte' },
+silly publish   version: '0.0.2',
+silly publish   dependencies: 
+silly publish    { hat: '0.0.3',
+silly publish      request: '= 2.9.100',
+silly publish      qs: '= 0.4.2',
+silly publish      underscore: '1.3.1' },
+silly publish   devDependencies: { vows: '0.6.2' },
+silly publish   engines: { node: '>= 0.4.x < 0.8.0' },
+silly publish   repository: 
+silly publish    { type: 'git',
+silly publish      url: 'git://github.com/mateodelnorte/node-paypal-masspayments.git' },
+silly publish   scripts: { test: 'vows test/* --spec' },
+silly publish   _npmUser: { name: 'mateodelnorte', email: 'mattwalters5@gmail.com' },
+silly publish   _id: 'node-paypal-masspayments@0.0.2',
+silly publish   optionalDependencies: {},
+silly publish   _engineSupported: true,
+silly publish   _npmVersion: '1.1.0-3',
+silly publish   _nodeVersion: 'v0.6.9',
+silly publish   _defaultsLoaded: true,
+silly publish   dist: 
+silly publish    { shasum: '97951791e6c2ea6b921dbdad43b1c6aa8476ff47',
+silly publish      tarball: 'http://registry.npmjs.org/node-paypal-masspayments/-/node-paypal-masspayments-0.0.2.tgz' } }
+verbose raw, before any munging node-paypal-masspayments
+verbose url resolving [ 'https://registry.npmjs.org/', './node-paypal-masspayments' ]
+verbose url resolved https://registry.npmjs.org/node-paypal-masspayments
+http PUT https://registry.npmjs.org/node-paypal-masspayments
+http 409 https://registry.npmjs.org/node-paypal-masspayments
+verbose raw, before any munging node-paypal-masspayments
+verbose url resolving [ 'https://registry.npmjs.org/', './node-paypal-masspayments' ]
+verbose url resolved https://registry.npmjs.org/node-paypal-masspayments
+http GET https://registry.npmjs.org/node-paypal-masspayments
+http 200 https://registry.npmjs.org/node-paypal-masspayments
+info Already published node-paypal-masspayments@0.0.2
+verbose uploading bin dists []
+ERR! publish fail Cannot publish over existing version.
+ERR! publish fail Bump the 'version' field, set the --force flag, or
+ERR! publish fail     npm unpublish 'node-paypal-masspayments@0.0.2'
+ERR! publish fail and try again
+ERR! 
+ERR! System Darwin 10.8.0
+ERR! command "node" "/usr/local/bin/npm" "publish"
+ERR! cwd /Users/matt/Development/node-paypal-masspayments
+ERR! node -v v0.6.9
+ERR! npm -v 1.1.0-3
+ERR! code EPUBLISHCONFLICT
+ERR! message publish fail
+ERR! errno {}
+verbose exit [ 1, true ]

@@ -2,7 +2,7 @@
   "name": "node-paypal-masspayments",
   "description": "Making payments with MassPayment NVP",
   "author": "http://github.com/mateodelnorte",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "dependencies": {
     "hat": "0.0.3",
     "request": "= 2.9.100",
