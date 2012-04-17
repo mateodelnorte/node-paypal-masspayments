@@ -26,7 +26,7 @@ MassPay.prototype.pay = function pay(paymentBatch, callback) {
     headers: { 
       'content-type': 'application/x-www-form-urlencoded' 
     },
-    url: 'https://api-3t.' + this.environment + '.paypal.com/nvp',
+    url: (this.environment === 'live') ? 'https://api-3t.paypal.com/nvp' :'https://api-3t.' + this.environment + '.paypal.com/nvp',
     body: qs.stringify(vars)
   }, function(err, res, body) {
     var response;
