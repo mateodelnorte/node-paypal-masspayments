@@ -21,12 +21,14 @@ function MassPay(options) {
 };
 
 MassPay.prototype.pay = function pay(paymentBatch, callback) {
-  var vars = _.extend(this.vars, paymentBatch.params);
+  var vars = _.extend(this.vars, paymentBatch.params)
+    , base_url = (this.environment === 'live') ? 'https://api-3t.paypal.com/nvp' : 'https://api-3t.' + this.environment + '.paypal.com/nvp';
+  console.log(base_url);
   request.post({
     headers: { 
       'content-type': 'application/x-www-form-urlencoded' 
     },
-    url: (this.environment === 'live') ? 'https://api-3t.paypal.com/nvp' :'https://api-3t.' + this.environment + '.paypal.com/nvp',
+    url: base_url,
     body: qs.stringify(vars)
   }, function(err, res, body) {
     var response;
