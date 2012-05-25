@@ -21,7 +21,7 @@ function MassPay(options) {
 };
 
 MassPay.prototype.pay = function pay(paymentBatch, callback) {
-  var vars = _.extend(this.vars, paymentBatch.params)
+  var vars = _.extend(_.clone(this.vars), paymentBatch.params)
     , base_url = (this.environment === 'live') ? 'https://api-3t.paypal.com/nvp' : 'https://api-3t.' + this.environment + '.paypal.com/nvp';
   request.post({
     headers: { 
