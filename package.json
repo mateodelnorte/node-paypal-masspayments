@@ -4,20 +4,19 @@
   "author": "http://github.com/mateodelnorte",
   "version": "0.0.5",
   "dependencies": {
-    "hat": "0.0.3",
-    "request": "= 2.9.100",
-    "qs": "= 0.4.2",
-    "underscore": "1.3.1"
+    "request": "~2.33.0",
+    "qs": "~0.6.6",
+    "object-extend": "~0.5.0"
   },
   "devDependencies": {
-    "vows": "0.6.2"
+    "tape": "~2.3.2",
+    "mockery": "~1.4.0"
   },
-  "engines": { "node": ">= 0.4.x < 0.8.0" },
-  "repository": { 
+  "repository": {
     "type": "git",
-    "url": "git://github.com/mateodelnorte/node-paypal-masspayments.git" 
+    "url": "git://github.com/mateodelnorte/node-paypal-masspayments.git"
   },
   "scripts": {
-    "test": "vows test/* --spec"
+    "test": "node ./test/all.js"
   }
 }
