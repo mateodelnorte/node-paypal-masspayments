@@ -51,3 +51,5 @@ Pass your batch to to the pay() method, along with an event handler to handle th
       // do stuff!
       assert.equal(results.ACK, 'Success')
     });
+
+To select the sandbox environement set process.env.PAYPAL_ENV to 'sandbox', otherwise use 'live', or 'production'
