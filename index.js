@@ -14,7 +14,7 @@ function MassPay(options) {
     , signature: options.signature
     , emailSubject: options.emailsubject
     , receiverType: 'emailaddress'
-    , currencyCode: 'USD'
+    , currencyCode: options.currency || 'USD'
   };
   
   this.environment = (process.env.PAYPAL_ENV === 'production') ? 'live' : 'sandbox';
