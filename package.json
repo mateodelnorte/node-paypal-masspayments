@@ -7,10 +7,10 @@
     "hat": "0.0.3",
     "request": "= 2.9.100",
     "qs": "= 0.4.2",
-    "underscore": "1.3.1"
+    "underscore": "^ 1.7.0"
   },
   "devDependencies": {
-    "vows": "0.6.2"
+    "vows": "0.7.0"
   },
   "engines": { "node": ">= 0.4.x < 0.8.0" },
   "repository": { 
